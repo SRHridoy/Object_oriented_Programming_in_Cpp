@@ -331,6 +331,117 @@ If the condition isn't satisfied, then the value can't be set.
 
 `Conclusion: The idea of encapsulation is to make the properties private and whoever wants to access these properties outside the class will have to go through the methods that we expose to have access to our private properties`
 
+<br><br>
+
+># Abstruction:
+    Abstraction means hiding complex things behind a procedure that makes those things simple.
+
+This simply means hiding complexity.
+
+># Creating Abstruction: 
+```c++
+class AbstractEmployee{
+    virtual void AskForPromotion() = 0;
+};
+```
+
+
+># Singing up to abract class :
+```c++
+class Employee:AbstractEmployee{
+    public:
+        void AskForPromotion(){
+        if(Age>30)
+            cout << Name << " got promoted!" << endl;
+        else
+            cout << Name << " , sorry NO promotion for you!" << endl;
+        }
+};
+```
+
+> Full code for abstraction : 
+
+```c++
+#include<iostream>
+using namespace std;
+
+class AbstractEmployee{
+    virtual void AskForPromotion() = 0;
+};
+
+class Employee:AbstractEmployee{
+private:
+    string Name;
+    string Company;
+    int Age;
+
+public:
+    void setName(string name){
+        Name =  name;
+    }
+    string getName(){
+        return Name;
+    }
+
+    void setCompany(string company){
+        Company = company;
+    }
+    string getCompany(){
+        return Company;
+    }
+
+    void setAge(int age){
+        if(age>=18)
+            Age = age;
+    }
+    int getAge(){
+        return Age;
+    }
+
+    void introduceYourself(){
+        cout<<"Name - " << Name << endl;
+        cout << "Company - " << Company << endl;
+        cout << "Age - " << Age << endl;
+    }
+
+    Employee(string name, string company, int age){
+        Name = name;
+        Company = company;
+        Age = age;
+    }
+
+    void AskForPromotion(){
+        if(Age>30)
+            cout << Name << " got promoted!" << endl;
+        else
+            cout << Name << " , sorry NO promotion for you!" << endl;
+    }
+};
+
+int main()
+{
+    Employee employee1=Employee("Hridoy", "CSE-GIST", 22);
+    Employee employee2=Employee("Rupa","RannaBanna", 31);
+
+    employee1.AskForPromotion();
+    employee2.AskForPromotion();
+}
+```
+
+<br><br>
+
+># Inheritance : 
+
+Syntax :
+```cpp
+class Developer:Employee{
+    
+};
+```
+
+`Here, Developer is a Child Class(Derived Class, Subclass) and Employee is a Parent Class(Super Class, Base Class).`
+
+Now, Developer has the all properties of the Employee class.
 
 
 
