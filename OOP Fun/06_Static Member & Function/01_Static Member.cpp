@@ -1,11 +1,12 @@
-//Each Object will create seperate copy of itselg in memory.
+//Each Object will create seperate copy of itself in memory.
 
 //Static member never reserve seperate space in memory...It only occupies space once and the space is used by all this objects...So, static member variable is common to all classes...
 
 /*
 (i)Static member would be allocated memory only once.
 (ii)And that memory is shared by both the objects.
-(iii)Static Data members belong a class & common to all objects...we need to delclare this in outside as int STATIC::stat = 0;(need global declaration)
+(iii)Static Data members belong a class & common to all objects...we need to delclare this in outside as 
+int STATIC::stat = 0;(need global declaration)
 */
 
 #include<iostream>
