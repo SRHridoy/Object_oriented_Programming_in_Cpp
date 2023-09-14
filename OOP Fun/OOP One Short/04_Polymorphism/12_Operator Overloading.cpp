@@ -6,7 +6,7 @@ class Complex
     public:
         int real;
         int img;
-    Complex(int x, int y)
+    Complex(int x = 0, int y = 0)
     {
         real = x;
         img = y;
@@ -14,7 +14,8 @@ class Complex
 
     Complex operator +(Complex &c)
     {
-        Complex ans(0,0);
+        //Complex ans(0,0);//no need because we overload our constructor...
+        Complex ans;
         ans.real = real + c.real;
         ans.img = img + c.img;
         return ans;

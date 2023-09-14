@@ -51,7 +51,7 @@ int main()
     Rectangle r2(4,5);
     cout << r2.l << " " << r2.b << endl;
     
-    Rectangle *r4 = new Rectangle();
+    Rectangle *r4 = new Rectangle(4,6);
     cout << r4->l << " " << r4->b << endl;
     delete r4;
 

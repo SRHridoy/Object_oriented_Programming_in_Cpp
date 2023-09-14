@@ -50,7 +50,8 @@ int main()
 
     PreAndPostIncrementOverloading police(20), Substraction;
 
-    //Substraction = (++Teacher)-(police++); WHY???
+    //WHY???
+    //Substraction = (++Teacher)-(police++); 
     Substraction =Teacher - police;
     Substraction.Show();
 }
