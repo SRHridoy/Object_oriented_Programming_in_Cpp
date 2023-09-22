@@ -1,0 +1,1 @@
+//Write a C++ program to display the marks scored by a student in the final semester examination.The student appears in exams of Math, Science, Bangla, English and ICT courses in the final semester. Each course is of 100 marks. Define proper class, constructor, and method(s) in your program.Make necessary assumptions required.

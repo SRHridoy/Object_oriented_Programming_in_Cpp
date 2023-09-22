@@ -1,0 +1,3 @@
+/*
+Write and execute a C++ program which create a shape class and derive circle and square class from shape class. Define appropriate constructors for all the three classes. Define Find-Area method in shape class and override this method in circle and square classes to find their area...
+*/

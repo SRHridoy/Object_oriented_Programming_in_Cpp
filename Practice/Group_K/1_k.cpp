@@ -1,0 +1,1 @@
+//Write a C++ program to create Account class and derive Saving-Account class from Account class. Saving-Account class should have one constructor which calls constructor of Account class.Both Account and Saving-Account classes should have their own methods to display account details.

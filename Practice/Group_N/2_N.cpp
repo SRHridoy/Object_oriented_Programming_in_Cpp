@@ -1,0 +1,3 @@
+/*
+Write a C++ program to create a Teacher class. Derive Graduate_Teacher and School_Teacher classes from the Teacher class. Define constructors for all the classes. Define methods to display teacher name,subject and years of experience. Make necessary assumptions, if any...
+*/
